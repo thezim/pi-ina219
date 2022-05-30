@@ -23,7 +23,7 @@
 // Set the I2C address of the INA219. This will be in the range
 //  0x40-0x4F, depending on how the address setting pins (7 and 8)
 //  are connected 
-#define I2C_ADDR 0x42
+#define I2C_ADDR 0x43
 
 // Set the I2C device. On a Raspberry Pi, the I2C on the GPIO header
 //  is device 1, not 0.
@@ -36,10 +36,10 @@
 //  increase, of course, when there are two in series.)
 
 // Voltages in mV
-#define BATTERY_VOLTAGE_100_PERCENT 8260
-#define BATTERY_VOLTAGE_0_PERCENT 6000 
+#define BATTERY_VOLTAGE_100_PERCENT 4200
+#define BATTERY_VOLTAGE_0_PERCENT 3000 
 // Capacity in mA.hr
-#define BATTERY_CAPACITY 2400
+#define BATTERY_CAPACITY 1000
 
 // Minimum charging current in mA
 #define MIN_CHARGING_CURRENT 10
@@ -47,7 +47,7 @@
 // Shunt resistance in mOhms -- this is a function of the circuit,
 //  not the battery. A value of 0.1 ohms is pretty typical in INA219-based
 //  designs.
-#define SHUNT_MILLIOHMS 100
+#define SHUNT_MILLIOHMS 10
 
 /*============================================================================
 
